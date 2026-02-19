@@ -26,4 +26,14 @@ function ageUp($age){
 }
 
 ageUp($ages);
+
+function staticTest() {
+  static $x = 0; // static scope
+  echo $x;
+  $x++;
+}
+
+staticTest();
+staticTest();
+staticTest();
 ?>
